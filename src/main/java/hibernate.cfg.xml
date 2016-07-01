@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/emiolo</property>
+		<property name="connection.username">wadmin</property>
+		<property name="connection.password">nano@2017</property>
+
+		<property name="archive.autodetection">class</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<property name="current_session_context_class">thread</property>
+		<property name="transaction.auto_close_session">true</property>
+
+		<property name="show_sql">false</property>
+		<property name="format_sql">false</property>
+		<property name="use_sql_comments">false</property>
+		<property name="generate_statistics">false</property>
+
+		<mapping class="br.com.emiolo.model.Usuario" />
+
+
+	</session-factory>
+</hibernate-configuration>
