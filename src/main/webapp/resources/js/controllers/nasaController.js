@@ -12,12 +12,12 @@ angular.module("emiolo").controller("nasaController", function ($scope, emioloAP
 			
 			$scope.loading = false;
 			$scope.fotos = data.photos;	
-			
+			$scope.msg = '';
 			
 		}).error(function(err){
 			
 			$scope.loading = false;
-			$scope.msg = '<div class="alert alert-danger alerta"><strong>Erro!</strong>Servidor de Nasa.</div> ';
+			$scope.msg = '<div class="alert alert-danger alerta"><strong>Erro!</strong> Imagens não encontrada.</div> ';
 			
         });
 		

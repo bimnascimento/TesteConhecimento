@@ -31,17 +31,17 @@
 						<div class="row">
 							<div class="col-md-4">
 								<h4>Dia:</h4>
-								<input type="number" id="dia" name="dia" class="form-control"
+								<input type="number" id="dia" name="dia" max="31" min="1" class="form-control"
 									ng-model="nasa.dia">
 							</div>
 							<div class="col-md-4">
 								<h4>Mês:</h4>
-								<input type="number" id="mes" name="mes" class="form-control"
+								<input type="number" id="mes" name="mes" max="12" min="1" class="form-control"
 									ng-model="nasa.mes">
 							</div>
 							<div class="col-md-4">
 								<h4>Ano:</h4>
-								<input type="number" id="ano" name="ano" class="form-control"
+								<input type="number" id="ano" name="ano" class="form-control" max="2016" min="2012"
 									ng-model="nasa.ano">
 							</div>
 						</div>
@@ -61,7 +61,7 @@
 	<div class="row">
 
 		<div class="col-md-12">
-			<div class="jumbotron">
+			<div class="">
 
 				<ul id="grid" class="list-unstyled">
 					<li class="col-md-3 col-sm-4 col-xs-6 list-unstyled" data-ng-repeat="foto in fotos"><a href="{{foto.img_src}}" target="_blank"><img  class="img-responsive"
