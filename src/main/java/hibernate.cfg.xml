@@ -10,6 +10,8 @@
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		
 		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/emiolo</property>
+		<!-- <property name="connection.username">root</property>
+		<property name="connection.password"></property> -->
 		<property name="connection.username">wadmin</property>
 		<property name="connection.password">nano@2017</property>
 

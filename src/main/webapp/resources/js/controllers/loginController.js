@@ -22,7 +22,7 @@ angular.module("emiolo").controller("loginController", function ($scope, emioloA
 			$scope.loading = false;
 			$scope.msg = '<div class="alert alert-danger alerta"><strong>Erro!</strong>Servidor de autenticação.</div> ';
 			
-        });;
+        });
 	};
 	
 	$scope.logout = function () {

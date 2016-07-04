@@ -14,6 +14,19 @@ angular.module("emiolo").config(function ($routeProvider) {
 		}
 	});
 	
+	$routeProvider.when("/nasa", {
+		//cache: false,
+		templateUrl: "nasa.jsp",
+		controller: "nasaController",
+		resolve: {
+			autenticado: function ($window, $q, $location) {
+				if (!$window.sessionStorage["userInfo"]) {
+					  $location.path("/login");
+			      } 
+			}
+		}
+	});
+	
 	$routeProvider.when("/login", {
 		//cache: false,
 		templateUrl: "login.jsp",

@@ -34,6 +34,7 @@
 	<script src="resources/js/app.js"></script>
 	<script src="resources/js/controllers/loginController.js"></script>
 	<script src="resources/js/controllers/usuariosController.js"></script>
+	<script src="resources/js/controllers/nasaController.js"></script>
 	<script src="resources/js/services/eMioloAPIService.js"></script>
 	<script src="resources/js/config/routeConfig.js"></script>
 	<script src="resources/js/value/configValue.js"></script>

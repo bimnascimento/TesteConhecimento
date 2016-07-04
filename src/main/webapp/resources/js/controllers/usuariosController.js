@@ -1,6 +1,7 @@
 angular.module("emiolo").controller("usuariosController", function ($scope, $http, $location, $compile, $window, emioloAPI, DTOptionsBuilder, DTColumnBuilder, DTColumnDefBuilder, config) {
 	
 	$scope.loading = true;
+	$scope.classUsuario = "active";
 	
 	$scope.msg_home = config.msg_home+$window.sessionStorage["userInfo"];
 	
@@ -109,9 +110,6 @@ angular.module("emiolo").controller("usuariosController", function ($scope, $htt
 	};
 	
 	
-	$("#filterbox").keyup(function() {
-		$('#tableUsuarios').DataTable().search(this.value).draw();
-    });
 	
 	$scope.loading = false;
 		

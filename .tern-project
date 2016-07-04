@@ -1,4 +1,5 @@
 {
+  "ecmaVersion": 5,
   "plugins": {
     "guess-types": {
       
@@ -26,6 +27,5 @@
     "ecma5",
     "browser",
     "jquery"
-  ],
-  "ecmaVersion": 5
+  ]
 }
